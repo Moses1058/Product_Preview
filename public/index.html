@@ -1,0 +1,43 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Procut Preview</title>
+    <link href="styles.css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="./assets/favicon-32x32.png">
+</head>
+<body class=" text-text_color bg-cream font-montserrat flex justify-center items-center py-5 ">
+    <div class=" justify-center flex w-11/12 max-w-4xl rounded-xl overflow-hidden lg:shadow-2xl lg:max-h-project_size ">
+        <div class=" bg-white flex flex-col w-full max-w-2xl lg:grid lg:max-w-none lg:grid-cols-projct"><!--Backbone-->    
+            
+            <div>
+                <picture>
+                    <source media="(min-width:1024px)" srcset="./assets/image-product-desktop.jpg">
+                    <img class=" lg:h-full lg:w-full" src="./assets/image-product-mobile.jpg" alt="Chanel Perfume">
+                </picture>
+            </div>
+            <div class=" p-6 lg:p-10"><!--Main Info-->
+
+                <div><!--Caption-->
+                    <p class=" text-xs tracking-huge mb-2 lg:text-base lg:mb-6">PERFUME</p>
+                    <h1 class=" text-heading_color font-fraunces  text-3xl font-semibold mb-3
+                    lg:text-6xl lg:mb-10">Gabrielle Essence Eau De Parfum</h1>
+                    <p class=" text-sm lg:text-xl lg:max-w-xs">A floral, solar and voluptuous inerpretation composed by Olivier Polge, Perfumer-Creator for the House of CHANEL.</p>
+                </div>
+                <div class=" flex items-center mt-5 lg:mt-10"><!-- Price -->
+                    <h2 class=" text-price font-fraunces font-bold text-3xl mr-6 lg:text-5xl lg:mr-10">$149.99</h2>
+                    <p class=" line-through text-sm lg:text-lg">$169.99</p>
+                </div>
+                <div class="flex justify-center mt-5 lg:mt-12">
+                    <div class=" flex justify-center items-center w-full rounded-md bg-price px-8 py-3 lg:py-6 lg:px-5 cursor-pointer hover:bg-green-900 transition ease-out duration-300">
+                        <!-- Add To Cart -->
+                        <img class=" w-4 h-4 lg:w-6 lg:h-6" src="./assets/icon-cart.svg" alt="Cart Icon">
+                        <p class=" text-white ml-3 text-sm font-semibold lg:text-lg">Add to Cart</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
